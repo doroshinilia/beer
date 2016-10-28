@@ -1,0 +1,618 @@
+
+@import url(https://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+
+* {
+	box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+html, body{
+	height: 100%;
+}
+@charset "utf-8";
+
+.wrapper{
+	border:1px solid black;
+	max-width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+	background: url(pic/wood05.jpg);
+	background-repeat:repeat;
+	border-radius: 10px 10px 0 0;
+	z-index: 1;
+}
+.header {
+	border: 1px solid blue;
+	max-width:1200px;
+	height: 130px;
+	margin: 0 auto 1px;
+	border-radius: 10px;
+	font-family: 'Russo One', sans-serif;
+	z-index: 1;
+}
+
+.logo{
+	border:1px solid purple;
+	box-sizing: border-box;
+	padding: 40px 0px 0px 15px;
+	width: 300px;
+	height: 130px;
+	background: url(pic/barrelpic.jpg) no-repeat;
+	font-family: 'Lobster', cursive;
+	border-radius: 5px;
+	float: left;
+	z-index: 1;
+	}
+
+.logo a{
+	text-decoration: none;
+	font-size:65px;
+	
+}
+.topmenu{
+	border: 1px solid yellow;
+	float: left;
+	font-size: 25px;
+	color: white;
+	position: relative;
+	z-index: 1;
+}
+
+.topmenu a{
+	margin: 10px ;
+	text-decoration: none;
+	font-family: 'Lobster', cursive;
+	color:#FFFACD;
+	font-size: 25px;
+	transition :0.5s all;/*замедление изменений цвета при наведении*/
+}
+
+
+.topmenu a:hover{
+	color: #800000; 
+    text-decoration: underline;
+    padding: 5px 0 5px 5px;
+}
+.topmenu li:hover ul{
+	display: block; /*отбражение при наведении курсора*/
+	z-index: 1000;
+}
+ul.topmenu li{
+	list-style-type: none; /* убираем маркеры */
+	display: inline; /* выравниваем меню в линию*/
+	float: left;
+	position: relative;
+	margin: 0 10px 0 0;
+	z-index: 1000;
+}
+
+.submenu3{
+	width: 500px;
+	position: absolute;
+	display: none;
+	z-index: 1000;
+	padding: 0;
+}
+.submenu3 a{font-size: 17px;}
+
+
+
+.submenu5{
+	width: 500px;
+	position: absolute;/*вертикальное выравнивание*/
+	display: none;/*без наведения курсора не видно меню*/
+	z-index: 1000;
+	padding: 0;
+}
+
+ .submenu5 a{font-size: 17px;}
+
+.bigbar{
+	border: 1px solid red;
+	width: 900px;
+	margin: 10px 0 0 230px;
+	border-radius: 15px;
+	background-color:none;
+}
+.textbar{
+	border:1px solid black;
+	max-width: 100%;
+	max-height: auto;
+	margin: 5px 15px 0 5px;
+	border-radius: 15px;
+	font-family: 'Lobster', cursive;
+	text-indent: 3em;
+	font-size: 17px;
+	color: #F0FFFF;
+	background-color: none;}
+
+.menu{
+border: 1px solid green;
+max-width: 205px;
+max-height: 450px;
+margin: 15px 0 0 5px;
+float: left;
+font-family: 'Lobster', cursive;
+border-radius: 10px;
+}
+
+.menu a{
+	color: #067ff0;
+	text-decoration: none;
+	margin: 0 10px 0 0;
+	font-size: 30px;
+	transition :0.5s all;
+}
+.menu a:hover{
+	color: #800000; 
+    text-decoration: underline;
+    padding: 5px 0 5px 5px;
+}
+.menu a:active {color: #800000;}
+ 
+.block1{
+	box-sizing: border-box;
+	padding-top: 5px;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: url(pic/historylogo.jpg) no-repeat;
+	border-radius: 10px;
+	margin: 5px 0 0 0;
+}
+.block1 a{
+			color: black;
+			-webkit-text-stroke: 1px;
+
+	text-decoration: none;
+}
+.block2{
+	padding-top: 5px;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: url(pic/kindslogo.jpg) no-repeat;
+	margin: 5px 0 0 0;
+	border-radius: 10px;
+}
+.block2 a{
+
+	color: black;
+	-webkit-text-stroke: 1px;
+	text-decoration: none;
+	font-size: 26px;
+	
+}
+
+.block3{
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: url(pic/maltlogo.jpg) no-repeat;
+	border-radius: 10px;
+	margin: 5px 0 0 0;
+
+}
+.block3 a{
+			color: black;
+			-webkit-text-stroke: 1px;
+	text-decoration: none;
+}
+.block4{
+	padding-top: 4px;
+	box-sizing: border-box;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: url(pic/hoplogo.jpg) no-repeat;
+	border-radius: 10px;
+	margin: 5px 0 0 0;
+}
+.block4 a{
+			color: black;
+			-webkit-text-stroke: 1px;
+	text-decoration: none;
+}
+.block5{
+	padding-top: 4px;
+	box-sizing: border-box;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: url(pic/waterlogo.jpg) no-repeat;
+	border-radius: 10px;
+	margin: 5px 0 0 0;
+}
+.block5 a{
+			color: black;
+			-webkit-text-stroke: 1px;
+	text-decoration: none;
+}
+.block6{
+	box-sizing: border-box;
+	padding-top: 4px;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: url(pic/brewlogo.jpg) no-repeat;
+	border-radius: 10px;
+	margin: 5px 0 0 0;
+}
+
+.block6 a{
+	color:black;
+	-webkit-text-stroke: 1px;
+	text-decoration: none;
+}
+.block7{
+	box-sizing: border-box;
+	padding-top: 10px;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: url(pic/festlogo.jpg) no-repeat;
+	border-radius: 10px;
+	margin: 5px 0 0 0;
+}
+.block7 a{
+	color:black;
+	-webkit-text-stroke: 1px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.block8{
+	padding-top: 4px;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: url(pic/newslogo.jpg) no-repeat;
+	border-radius: 10px;
+	margin: 5px 0 0 0;
+	box-sizing: border-box;
+}
+.block8 a{
+	color:black;
+	-webkit-text-stroke: 1px;
+	text-decoration: none;
+}
+.bottombar{
+	z-index: 999;
+	height: 100px;
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+	float: center;
+	border-radius: 0 0 10px 10px;
+background:url(pic/bottompic.jpg);
+}
+
+#buttonsBar{
+border:1px solid orange;
+width:600px;
+height: 90px;
+
+}
+/* --------------------кнопка Обратная связь*/
+.show_popup{
+	margin-top: 5px;
+	margin-right: 50px;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	border-radius:8px;
+	height: 35px;
+	float: right;
+	z-index: 1000;
+	background-color: #FFFACD;
+}
+
+.show_popup:hover{
+text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all;
+}
+/*-----------------------окно обратной связи*/
+.overlay_popup{
+	display: none;
+	position: fixed;
+	z-index: 998;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: #000;
+	opacity: 0.5;
+}
+
+.popup{
+	display: none;
+	width: 500px;
+	height: 430px;
+	margin-top: -215px;
+	margin-left: -250px;
+	top:50%;
+	left: 50%;
+	position: fixed;
+	z-index: 1000;
+	background: #CD853F;
+	border-radius: 25px;
+	font-family: 'Lobster', cursive;
+}
+#sendButt{
+	font-family: 'Lobster', cursive;
+	border-radius: 6px;
+	background-color: #FFFACD;
+}
+#sendButt:hover{
+text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all;
+}
+
+
+.win_callback{
+margin-left: 40px;
+}
+
+
+/*-------------------------кнопка регистрации*/
+.show_popregistr{
+	margin-top: 5px;
+	margin-right: 5px;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	border-radius:8px;
+	height: 35px;
+	float: right;
+	z-index: 1000;
+	background-color: #FFFACD;
+}
+.show_popregistr:hover{
+	text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all;
+}
+
+
+
+/* ------------------------окно регистрации*/
+.popregistr{
+	display: none;
+	width: 300px;
+	height: 400px;
+	margin-top: -215px;
+	margin-left: -150px;
+	top:50%;
+	left: 50%;
+	position: fixed;
+	z-index: 1000;
+	background: #CD853F;
+	border-radius: 25px;
+	font-family: 'Lobster', cursive;
+}
+.win_registr{
+	margin-left: 60px;
+}
+
+#regSubmit{
+	font-family: 'Lobster', cursive;
+	border-radius: 6px;
+	background-color: #FFFACD;
+}
+#regSubmit:hover{
+text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all;
+}
+/*---------------------------кнопка входа*/
+.show_enter{
+	margin-top: 5px;
+	margin-right: 5px;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	border-radius:8px;
+	height: 35px;
+	float: right;
+	z-index: 1000;
+	background-color: #FFFACD;
+}
+.show_enter:hover{
+text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all;
+}
+/*------------------------------окно входа*/
+.popenter{
+	display: none;
+	width: 300px;
+	height: 220px;
+	margin-top: -115px;
+	margin-left: -150px;
+	top:50%;
+	left: 50%;
+	position: fixed;
+	z-index: 1000;
+	background: #CD853F;
+	border-radius: 25px;
+	font-family: 'Lobster', cursive;
+}
+.win_enter{
+	margin-left: 60px;}
+
+.linkpass:hover{
+text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all;
+}
+.linkpass a{
+	color:#067ff0;
+}
+
+#entButt{
+	font-family: 'Lobster', cursive;
+	border-radius: 6px;
+	background-color: #FFFACD;
+}
+
+#entButt:hover{
+text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all;
+}
+
+
+
+/*--------кнопка вызова таблицы---------*/
+.show_table{
+	margin-top: 5px;
+	margin-right: 5px;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	border-radius:8px;
+	height: 35px;
+	float: right;
+	z-index: 1000;
+	background-color: #FFFACD;
+
+}
+
+.show_table:hover{
+text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all
+}
+
+	/*---------таблица---------*/
+.popTable{/*подложка таблицы*/
+	display: none;	
+	width: 500px;
+	height: 430px;
+	margin-top: -215px;
+	margin-left: -250px;
+	top:50%;
+	left: 50%;
+	position: fixed;
+	z-index: 1000;
+	background: #CD853F;
+	border-radius: 25px;
+	font-family: 'Lobster', cursive;
+}
+#tableReg{
+	margin-left: 18px;
+	margin-top: 18px;
+}
+.delRow{
+	font-family: 'Lobster', cursive;
+	border-radius: 6px;
+	background-color: #FFFACD;
+}
+
+.delRow:hover{
+text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all;
+}
+
+#edit1{
+display: none;	
+	width: 500px;
+	height: 430px;
+	margin-top: -215px;
+	margin-left: -250px;
+	top:50%;
+	left: 50%;
+	position: fixed;
+	z-index: 1001;
+	background: #CD853F;
+	border-radius: 25px;
+	font-family: 'Lobster', cursive;
+}
+#form1edit{
+margin-top: 80px;
+margin-left: 100px;
+}
+#ed_Row{
+	font-family: 'Lobster', cursive;
+	border-radius: 6px;
+	background-color: #FFFACD;
+}
+#ed_Row:hover{
+text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all;
+}
+
+#regSubmit_edit{
+	font-family: 'Lobster', cursive;
+	border-radius: 6px;
+	background-color: #FFFACD;
+}
+#regSubmit_edit:hover{
+text-decoration: underline;
+color:#800000;
+cursor: pointer;
+transition :0.5s all;
+}
+
+
+@media (max-width:478px) {
+.topmenu{
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+.header{
+	margin-bottom: 70px;
+}
+
+.menu{
+	float: left;
+}
+
+.bigbar{
+	width: 100%;
+	margin-left: 0;
+	margin-top: 680px;	
+}
+
+ul.topmenu li{
+	margin: 30px 20px;
+}
+ul.submenu3 li{
+	padding:0;
+}
+
+ul.submenu5 li{
+padding: 0;
+}
+.bottombar{
+	width: 100%;
+}
+#buttonsBar{
+	width: 100%;
+}
+
+}
